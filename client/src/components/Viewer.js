@@ -3,7 +3,7 @@ import * as THREE from "three"
 import SceneManager from "../utils/SceneManager"
 import { Range } from "rc-slider"
 import "rc-slider/assets/index.css"
-const width = 200, height = 200;
+const width = 400, height = 400;
 const dimension = 20;
 const cameraDistance = 35;
 
@@ -99,15 +99,15 @@ class Viewer extends React.Component {
                 <div style={{width, height}} ref={mount => this.mount = mount}>
                 </div>
                 <div>
-                    <div style={{width:200}}>
+                    <div style={{width}}>
                         X: [{this.state.minX}, {this.state.maxX}] 
                         <Range value={[this.state.minX, this.state.maxX]}min={0} max={dimension} pushable={1} onChange={([minX, maxX]) => { this.setState({minX, maxX}) }} />
                     </div>
-                    <div style={{width:200}}>
+                    <div style={{width}}>
                         Y: [{this.state.minY}, {this.state.maxY}]  
                         <Range value={[this.state.minY, this.state.maxY]}min={0} max={dimension} pushable={1} onChange={([minY, maxY]) => { this.setState({minY, maxY}) }} />
                     </div>
-                    <div style={{width:200}}>
+                    <div style={{width}}>
                         Z: [{this.state.minZ}, {this.state.maxZ}]  
                         <Range value={[this.state.minZ, this.state.maxZ]}min={0} max={dimension} pushable={1} onChange={([minZ, maxZ]) => { this.setState({minZ, maxZ}) }} />
                     </div>
