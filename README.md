@@ -1,3 +1,3 @@
-# react_google_mern
+# asteroid viewer
 
 TODO fill out instructions
