@@ -6,9 +6,9 @@ const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000)
 const renderer = new THREE.WebGLRenderer()
 
 const ambientLight = new THREE.AmbientLight(0xcccccc);
-const directionalLight = new THREE.DirectionalLight( 0xffffff, 2 );
+const directionalLight = new THREE.DirectionalLight( 0x666666, 2 );
       directionalLight.position.set(1, 1, 0.5).normalize();
-      
+
 
 
 // Manage animations in here
@@ -20,7 +20,7 @@ const SceneManager = {
         camera.aspect = width/height;
         camera.position.z = 5;
 
-        scene.background = new THREE.Color(0xbfd1e5)
+        scene.background = new THREE.Color(0x0B212B)
         scene.add(ambientLight)
         scene.add(directionalLight)
     },
